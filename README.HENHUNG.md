@@ -13,7 +13,7 @@ __Sản phẩm:__
 6. Gửi dữ liệu lên nền tảng IoT ThingSpeak để theo dõi từ xa qua internet
 - Ảnh chụp minh họa:\
   ![Ảnh minh họa](https://soict.hust.edu.vn/wp-content/uploads/logo-soict-hust-1-1024x416.png)
-  ![Cảm biến rung](https://soict.hust.edu.vn/wp-content/uploads/logo-soict-hust-1-1024x416.png)
+  ![Cảm biến rung](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
 ## TÁC GIẢ
 
 - Tên nhóm:......
