@@ -85,9 +85,9 @@ _Mô tả các thành phần phần mềm và vai trò của chúng, vị trí n
 ### ĐẶC TẢ HÀM
 
 - Giải thích một số hàm quan trọng: ý nghĩa của hàm, tham số vào, ra
-
+- 
+   Các hàm của phần hiển thị màn hình OLED (tích hợp 3 cảm biến)
   ```C
-      Các hàm của phần hiển thị màn hình OLED (tích hợp 3 cảm biến)
       /**
        * Khởi tạo màn hình OLED SSD1306, kiểm tra kết nối, và hiển thị thông báo "Khoi dong..."
        * Không có tham số vào. 
@@ -105,9 +105,10 @@ _Mô tả các thành phần phần mềm và vai trò của chúng, vị trí n
        * Không trả về giá trị.
        */
       void loop(); // thuộc chương trình hiển thị
-
+ ```
 
       Các hàm của phần gửi dữ liệu lên ThingSpeak:
+   ```C
       /**
        * Khởi động Serial, cấu hình chân cảm biến, kết nối WiFi.
        * Không có tham số vào.
