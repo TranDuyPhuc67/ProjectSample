@@ -12,7 +12,7 @@ __Sản phẩm:__
 5. Chuyển chế độ hiển thị bằng nút bấm (âm thanh → rung → khoảng cách)
 6. Gửi dữ liệu lên nền tảng IoT ThingSpeak để theo dõi từ xa qua internet
 - Ảnh chụp minh họa:\
-  ![Cảm biến âm thanh](https://soict.hust.edu.vn/wp-content/uploads/logo-soict-hust-1-1024x416.png)
+  ![Cảm biến âm thanh](z6773519346229_887a79c2f9e3190b51fb7dea0b5bff0a.jpg)
   ![Cảm biến rung](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
   ![Cảm biến siêu âm](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
   ![Thingspeak](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
