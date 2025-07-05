@@ -14,6 +14,10 @@
 Adafruit_SSD1306 man_hinh(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 int che_do = -1; // -1: chưa chọn, 0: âm thanh, 1: rung, 2: khoảng cách
 
+#define SO_DONG 5  // Số dòng cuộn được
+String lich_su[SO_DONG];  // Mảng lưu các giá trị gần đây
+int so_dong = 0;
+
 void setup() {
   Serial.begin(115200);
   pinMode(NUT_BAM, INPUT_PULLUP);
@@ -53,26 +57,21 @@ void loop() {
     return;
   }
 
-  // Đọc và hiển thị theo chế độ
-  man_hinh.clearDisplay();
-  man_hinh.setCursor(0, 0);
+  // Đọc cảm biến tương ứng
+  String tieu_de;
+  String gia_tri_moi;
+
 
   if (che_do == 0) {
-    int gia_tri = analogRead(CAM_BIEN_AM_THANH);
-    man_hinh.println("Cam bien am thanh:");
-    man_hinh.print(gia_tri);
-    man_hinh.println(" (ADC)");
-    Serial.print("Am thanh: ");
-    Serial.print(gia_tri);
-    Serial.println(" (ADC)");
+   int gia_tri = analogRead(CAM_BIEN_AM_THANH);
+    tieu_de = "Cam bien am thanh";
+    gia_tri_moi = String(gia_tri) + " (ADC)";
+    Serial.println(gia_tri);
   } else if (che_do == 1) {
     int gia_tri = analogRead(CAM_BIEN_RUNG);
-    man_hinh.println("Cam bien rung:");
-    man_hinh.print(gia_tri);
-    man_hinh.println(" (ADC)");
-    Serial.print("Rung: ");
-    Serial.print(gia_tri);
-    Serial.println(" (ADC)");
+    tieu_de = "Cam bien rung";
+    gia_tri_moi = String(gia_tri) + " (ADC)";
+    Serial.println(gia_tri);
   } else if (che_do == 2) {
     long duration;
     float distance;
@@ -86,15 +85,31 @@ void loop() {
     duration = pulseIn(ECHO_PIN, HIGH);
     distance = duration * 0.034 / 2;
 
-    man_hinh.println("Cam bien sieu am:");
-    man_hinh.print(distance);
-    man_hinh.println(" cm");
-
-    Serial.print("Cam bien sieu am: ");
-    Serial.print(distance);
-    Serial.println(" cm");
+    tieu_de = "Cam bien sieu am";
+    gia_tri_moi = String(distance, 1) + " cm";
+    Serial.println(distance);
   }
 
+// Cập nhật dữ liệu cuộn
+  if (so_dong < SO_DONG) {
+    lich_su[so_dong++] = gia_tri_moi;
+  } else {
+    for (int i = 0; i < SO_DONG - 1; i++) {
+      lich_su[i] = lich_su[i + 1];
+    }
+    lich_su[SO_DONG - 1] = gia_tri_moi;
+  }
+
+  // Hiển thị lên màn hình
+  man_hinh.clearDisplay();
+  man_hinh.setCursor(0, 0);
+  man_hinh.println(tieu_de);
+  // man_hinh.setCursor(0, 16);  // xuống dòng thứ 2 (16px)
+  // man_hinh.println(gia_tri_moi);
+  for (int i = 0; i < so_dong; i++) {
+    man_hinh.setCursor(0, (i + 1) * 10);
+    man_hinh.println(lich_su[i]);
+  }
   man_hinh.display();
   delay(300);
 }
