@@ -134,17 +134,17 @@ _Mô tả các thành phần phần mềm và vai trò của chúng, vị trí n
   
 ### KẾT QUẢ
 - Hiển thị ghi đè
-![Hiển thị ghi đè]([hien_thi_ghi_de.mp4](https://drive.google.com/file/d/1cf-DTUFXaE5r25L_yNLNIQVTNnAJTs2R/view?usp=sharing))
+![Hiển thị ghi đè](https://drive.google.com/file/d/1cf-DTUFXaE5r25L_yNLNIQVTNnAJTs2R/view?usp=sharing)
 
 - Hiển thị dạng cuộn
-![Hiển thị dạng cuộn]([hien_thi_dang_cuon.mp4](https://drive.google.com/file/d/1rIetL2tfgs_0Dhsynz50p1_0dH6n26Y4/view?usp=sharing))
+![Hiển thị dạng cuộn](https://drive.google.com/file/d/1rIetL2tfgs_0Dhsynz50p1_0dH6n26Y4/view?usp=sharing)
 
 - Hiển thị lên serial plotter
-![Hiển thị serial plotter]([hien_thi_serial_plotter.mp4](https://drive.google.com/file/d/1m8An9j3NIMtHY0W7rZprZ3zhEe0h22W5/view?usp=sharing))
+![Hiển thị serial plotter](https://drive.google.com/file/d/1m8An9j3NIMtHY0W7rZprZ3zhEe0h22W5/view?usp=sharing)
 
 - Hiển thị lên thingspeak
 ![Hiển thị thingspeak](ts_hien_thi.png)
-![Hiển thị thingspeak]([hien_thi_thingspeak.mp4](https://drive.google.com/file/d/1wLaAnkgSSwyq5mvIBFiS86uKQTJ_WTW3/view?usp=sharing))
+![Hiển thị thingspeak](https://drive.google.com/file/d/1wLaAnkgSSwyq5mvIBFiS86uKQTJ_WTW3/view?usp=sharing)
 
 - Lịch sử lưu trữ dữ liệu thingspeak
 ![Lịch sử thingspeak](ts_lich_su.png)
