@@ -22,25 +22,25 @@ __Sản phẩm:__
 - Giảng viên hướng dẫn: Ths. Nguyễn Đức Tiến
 
 ## MÔI TRƯỜNG HOẠT ĐỘNG
-_Module vi điều khiển sử dụng:
+_Module vi điều khiển sử dụng:_  
 ESP32 DEVKIT
 
-_Các module/kit cảm biến được sử dụng:
-Cảm biến âm thanh (Sound sensor module, ngõ ra analog)
-Cảm biến rung (Vibration sensor module, ngõ ra analog)
-Cảm biến siêu âm HC-SR04 (dùng đo khoảng cách)
-Màn hình OLED 0.96 inch I2C (SSD1306, độ phân giải 128x64)
-Nút nhấn (Button – sử dụng để chuyển chế độ)
-Dây nối (jumper wire), Breadboard
+_Các module/kit cảm biến được sử dụng:_  
+- Cảm biến âm thanh (Sound sensor module, ngõ ra analog)  
+- Cảm biến rung (Vibration sensor module, ngõ ra analog)  
+- Cảm biến siêu âm HC-SR04 (dùng đo khoảng cách)  
+- Màn hình OLED 0.96 inch I2C (SSD1306, độ phân giải 128x64)  
+- Nút nhấn (Button – sử dụng để chuyển chế độ)  
+- Dây nối (jumper wire), Breadboard
 
-_Chuẩn giao tiếp:
-Giao tiếp I2C: dùng kết nối ESP32 với màn hình OLED
-Giao tiếp digital và analog: đọc dữ liệu từ cảm biến
-Giao tiếp WiFi: kết nối mạng và gửi dữ liệu lên ThingSpeak
+_Chuẩn giao tiếp:_  
+- Giao tiếp I2C: dùng kết nối ESP32 với màn hình OLED  
+- Giao tiếp digital và analog: đọc dữ liệu từ cảm biến  
+- Giao tiếp WiFi: kết nối mạng và gửi dữ liệu lên ThingSpeak
 
-_Phần mềm sử dụng:
-Arduino IDE với board "ESP32 Dev Module"
-Trình duyệt web (xem dữ liệu trên trang web ThingSpeak)
+_Phần mềm sử dụng:_  
+- Arduino IDE với board "ESP32 Dev Module"  
+- Trình duyệt web (xem dữ liệu trên trang web ThingSpeak)
 
 
 
@@ -85,8 +85,8 @@ _Mô tả các thành phần phần mềm và vai trò của chúng, vị trí n
 ### ĐẶC TẢ HÀM
 
 - Giải thích một số hàm quan trọng: ý nghĩa của hàm, tham số vào, ra
-- 
-   Các hàm của phần hiển thị màn hình OLED (tích hợp 3 cảm biến)
+
+      Các hàm của phần hiển thị màn hình OLED (tích hợp 3 cảm biến)
   ```C
       /**
        * Khởi tạo màn hình OLED SSD1306, kiểm tra kết nối, và hiển thị thông báo "Khoi dong..."
@@ -105,11 +105,9 @@ _Mô tả các thành phần phần mềm và vai trò của chúng, vị trí n
        * Không trả về giá trị.
        */
       void loop(); // thuộc chương trình hiển thị
- ```
 
- -
-  Các hàm của phần gửi dữ liệu lên ThingSpeak:
-   ```C
+
+      Các hàm của phần gửi dữ liệu lên ThingSpeak:
       /**
        * Khởi động Serial, cấu hình chân cảm biến, kết nối WiFi.
        * Không có tham số vào.
@@ -131,7 +129,6 @@ _Mô tả các thành phần phần mềm và vai trò của chúng, vị trí n
        */
       float doKhoangCach(); // thuộc chương trình gửi dữ liệu lên ThingSpeak
 
-  ```
   
 ### KẾT QUẢ
 - Hiển thị ghi đè  
