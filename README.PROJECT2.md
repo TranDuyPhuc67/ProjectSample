@@ -63,8 +63,7 @@ _Cho biết cách nối dây, kết nối giữa các linh kiện_
 
 
 ### TÍCH HỢP HỆ THỐNG
-
-- Mô tả các thành phần phần cứng và vai trò của chúng:
+_Mô tả các thành phần phần cứng và vai trò của chúng:
 | Thiết bị phần cứng      | Vai trò                                                                 |
 |-------------------------|-------------------------------------------------------------------------|
 | ESP32 DevKit            | Vi điều khiển trung tâm, xử lý dữ liệu cảm biến, hiển thị, gửi dữ liệu |
@@ -75,8 +74,7 @@ _Cho biết cách nối dây, kết nối giữa các linh kiện_
 | Nút nhấn GPIO           | Điều khiển chuyển chế độ hiển thị dữ liệu trên màn hình OLED           |
 | WiFi Router             | Kết nối mạng, giúp ESP32 gửi dữ liệu lên ThingSpeak                    |
 
-
-- Mô tả các thành phần phần mềm và vai trò của chúng, vị trí nằm trên phần cứng nào:
+_Mô tả các thành phần phần mềm và vai trò của chúng, vị trí nằm trên phần cứng nào:
 | Phần mềm           | Vai trò                                                                 | Chạy trên         |
 |--------------------|-------------------------------------------------------------------------|-------------------|
 | Firmware Arduino   | Thu thập dữ liệu, xử lý, hiển thị, gửi HTTP request lên ThingSpeak      | ESP32 DevKit      |
