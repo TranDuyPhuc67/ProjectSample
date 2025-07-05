@@ -107,7 +107,8 @@ _Mô tả các thành phần phần mềm và vai trò của chúng, vị trí n
       void loop(); // thuộc chương trình hiển thị
  ```
 
-      Các hàm của phần gửi dữ liệu lên ThingSpeak:
+ -
+  Các hàm của phần gửi dữ liệu lên ThingSpeak:
    ```C
       /**
        * Khởi động Serial, cấu hình chân cảm biến, kết nối WiFi.
