@@ -1,16 +1,16 @@
-# PROJECT SAMPLE
-
-Mô tả nội dung cần báo cáo của môn đồ án
-> Sinh viên nên Fork từ dự án này
+# PROJECT II
 
 ## GIỚI THIỆU
 
-__Đề bài__: _Copy lại nội dung đề bài được yêu cầu._
+__Đề bài__: Thiết kế và xây dựng thiết bị tích hợp cảm biến đo dao động cơ học, âm thanh và khoảng cách bằng siêu âm
 
 __Sản phẩm:__
-1. Tính năng
-2. Tính năng
-3. Tính năng
+1. Đo cường độ âm thanh từ môi trường xung quanh bằng cảm biến âm thanh
+2. Phát hiện rung động cơ học (va chạm, rung nhẹ) bằng cảm biến rung
+3. Đo khoảng cách đến vật thể phía trước bằng cảm biến siêu âm
+4. Hiển thị dữ liệu thời gian thực trên màn hình OLED
+5. Chuyển chế độ hiển thị bằng nút bấm (âm thanh → rung → khoảng cách)
+6. Gửi dữ liệu lên nền tảng IoT ThingSpeak để theo dõi từ xa qua internet
 - Ảnh chụp minh họa:\
   ![Ảnh minh họa](https://soict.hust.edu.vn/wp-content/uploads/logo-soict-hust-1-1024x416.png)
 
