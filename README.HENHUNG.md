@@ -14,7 +14,7 @@ __Sản phẩm:__
 - Ảnh chụp minh họa:\
   ![Cảm biến âm thanh](z6773519346229_887a79c2f9e3190b51fb7dea0b5bff0a.jpg)
   ![Cảm biến rung](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
-  ![Cảm biến siêu âm](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
+  ![Cảm biến siêu âm](z6773519361617_70b7e949d568ca4084daa9d133c1c04e.jpg)
   ![Thingspeak](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
 ## TÁC GIẢ
 
