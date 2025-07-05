@@ -22,11 +22,10 @@ __Sản phẩm:__
 - Giảng viên hướng dẫn: Ths. Nguyễn Đức Tiến
 
 ## MÔI TRƯỜNG HOẠT ĐỘNG
-
-- Module vi điều khiển sử dụng:
+_Module vi điều khiển sử dụng:
 ESP32 DEVKIT
 
-- Các module/kit cảm biến được sử dụng:
+_Các module/kit cảm biến được sử dụng:
 Cảm biến âm thanh (Sound sensor module, ngõ ra analog)
 Cảm biến rung (Vibration sensor module, ngõ ra analog)
 Cảm biến siêu âm HC-SR04 (dùng đo khoảng cách)
@@ -34,12 +33,12 @@ Màn hình OLED 0.96 inch I2C (SSD1306, độ phân giải 128x64)
 Nút nhấn (Button – sử dụng để chuyển chế độ)
 Dây nối (jumper wire), Breadboard
 
-- Chuẩn giao tiếp:
+_Chuẩn giao tiếp:
 Giao tiếp I2C: dùng kết nối ESP32 với màn hình OLED
 Giao tiếp digital và analog: đọc dữ liệu từ cảm biến
 Giao tiếp WiFi: kết nối mạng và gửi dữ liệu lên ThingSpeak
 
-- Phần mềm sử dụng:
+_Phần mềm sử dụng:
 Arduino IDE với board "ESP32 Dev Module"
 Trình duyệt web (xem dữ liệu trên trang web ThingSpeak)
 
