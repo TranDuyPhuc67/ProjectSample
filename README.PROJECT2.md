@@ -12,10 +12,10 @@ __Sản phẩm:__
 5. Chuyển chế độ hiển thị bằng nút bấm (âm thanh → rung → khoảng cách)
 6. Gửi dữ liệu lên nền tảng IoT ThingSpeak để theo dõi từ xa qua internet
 - Ảnh chụp minh họa:\
-  ![Cảm biến âm thanh](z6773519346229_887a79c2f9e3190b51fb7dea0b5bff0a.jpg)
-  ![Cảm biến rung](z6773545581251_99766e39831be41db6c792ca2207c1d7.jpg)
-  ![Cảm biến siêu âm](z6773519361617_70b7e949d568ca4084daa9d133c1c04e.jpg)
-  ![Thingspeak](ts2.png)
+  ![Cảm biến âm thanh](cam_bien_am_thanh.jpg)
+  ![Cảm biến rung](cam_bien_rung.jpg)
+  ![Cảm biến siêu âm](cam_bien_sieu_am.jpg)
+  ![Thingspeak](ts_hien_thi.png)
 ## TÁC GIẢ
 
 - Trần Duy Phúc - 20225378
@@ -65,22 +65,24 @@ _Cho biết cách nối dây, kết nối giữa các linh kiện_
 ### TÍCH HỢP HỆ THỐNG
 
 - Mô tả các thành phần phần cứng và vai trò của chúng:
-| Thiết bị phần cứng       | Vai trò                                                                |
-| ------------------------ | ---------------------------------------------------------------------- |
-| ESP32 DevKit             | Vi điều khiển trung tâm, xử lý dữ liệu cảm biến, hiển thị, gửi dữ liệu |
-| Cảm biến âm thanh        | Gửi tín hiệu analog về ESP32 để đo mức độ âm thanh                     |
-| Cảm biến rung            | Gửi tín hiệu analog về ESP32 khi phát hiện chấn động                   |
-| Cảm biến siêu âm HC-SR04 | Đo khoảng cách, giao tiếp với ESP32 qua TRIG và ECHO                   |
-| Màn hình OLED SSD1306    | Hiển thị dữ liệu cảm biến, giao tiếp I2C với ESP32                     |
-| Nút nhấn GPIO            | Điều khiển chuyển chế độ hiển thị dữ liệu trên màn hình OLED           |
-| WiFi Router              | Kết nối mạng, giúp ESP32 gửi dữ liệu lên nền tảng ThingSpeak           |
+| Thiết bị phần cứng      | Vai trò                                                                 |
+|-------------------------|-------------------------------------------------------------------------|
+| ESP32 DevKit            | Vi điều khiển trung tâm, xử lý dữ liệu cảm biến, hiển thị, gửi dữ liệu |
+| Cảm biến âm thanh       | Gửi tín hiệu analog về ESP32 để đo mức độ âm thanh                     |
+| Cảm biến rung           | Gửi tín hiệu analog về ESP32 khi phát hiện chấn động                   |
+| Cảm biến siêu âm HC-SR04| Đo khoảng cách, giao tiếp với ESP32 qua TRIG và ECHO                   |
+| Màn hình OLED SSD1306   | Hiển thị dữ liệu cảm biến, giao tiếp I2C với ESP32                     |
+| Nút nhấn GPIO           | Điều khiển chuyển chế độ hiển thị dữ liệu trên màn hình OLED           |
+| WiFi Router             | Kết nối mạng, giúp ESP32 gửi dữ liệu lên ThingSpeak                    |
+
 
 - Mô tả các thành phần phần mềm và vai trò của chúng, vị trí nằm trên phần cứng nào:
-| Phần mềm                 | Vai trò                                                                   | Chạy trên        |
-| ------------------------ | ------------------------------------------------------------------------- | ---------------- |
-| Firmware Arduino (ESP32) | Thu thập dữ liệu, xử lý và hiển thị, gửi HTTP request lên ThingSpeak      | ESP32 DevKit     |
-| Serial Monitor (Arduino) | Quan sát dữ liệu cảm biến dạng text để kiểm tra và debug                  | Máy tính cá nhân |
-| ThingSpeak               | Nhận và lưu trữ dữ liệu, hiển thị dữ liệu cảm biến theo biểu đồ thời gian | Nền tảng Cloud   |
+| Phần mềm           | Vai trò                                                                 | Chạy trên         |
+|--------------------|-------------------------------------------------------------------------|-------------------|
+| Firmware Arduino   | Thu thập dữ liệu, xử lý, hiển thị, gửi HTTP request lên ThingSpeak      | ESP32 DevKit      |
+| Serial Monitor     | Quan sát dữ liệu cảm biến dạng text để kiểm tra và debug                | Máy tính cá nhân  |
+| ThingSpeak         | Nhận và lưu trữ dữ liệu, hiển thị dữ liệu cảm biến theo biểu đồ thời gian| Nền tảng Cloud    |
+
 
 
 ### ĐẶC TẢ HÀM
@@ -133,6 +135,18 @@ _Cho biết cách nối dây, kết nối giữa các linh kiện_
   ```
   
 ### KẾT QUẢ
+- Hiển thị ghi đè
+![Hiển thị ghi đè](hien_thi_ghi_de.mp4)
 
-- Các ảnh chụp với caption giải thích.
-- Hoặc video sản phẩm
+- Hiển thị dạng cuộn
+![Hiển thị dạng cuộn](hien_thi_dang_cuon.mp4)
+
+- Hiển thị lên serial plotter
+![Hiển thị serial plotter](hien_thi_serial_plotter.mp4)
+
+- Hiển thị lên thingspeak
+![Hiển thị thingspeak](ts_hien_thi.png)
+![Hiển thị thingspeak](hien_thi_thingspeak.mp4)
+
+- Lịch sử lưu trữ dữ liệu thingspeak
+![Lịch sử thingspeak](ts_lich_su.png)
